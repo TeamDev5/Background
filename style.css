@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.titre h1{
+    text-align: center;
+    padding: 8px;
+    background-color: rgb(213, 12, 213);
+    color: #fff;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+/*Square Pluie*/
+.square{
+    position: relative;
+    background-color: #000;
+    margin-top: 200px;
+    height: 150px;
+    width: auto;
+    overflow: hidden;
+}
+.raindrop-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: visible; /* Modification : permet aux gouttes de sortir de la div */
+}
+.raindrop{
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0.8);
+    width: 1px;
+    height: 5px;
+    animation: raindropFall 2s linear infinite;
+}
+.puddle{
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, 0);
+}
+@keyframes raindropFall{
+    0% {
+      top: 0;
+    }
+    100% {
+      top: 100%;
+    }
+}
+/*Square Pluie Fin*/
+.titre button{
+    margin: 12px;
+    padding: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+section{
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border: 8px solid #333;
+}
+.color{
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    margin: 0 1px;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+.clr1{
+    background-color: #9b0fdb;
+}
+.clr2{
+    background-color: #ffea00;
+}
+.clr3{
+    background-color: #04db53;
+}
+.clr4{
+    background-color: #0f68d8;
+}
+.clr5{
+    background-color: red;
+}
+.clr6{
+    background-color: orange;
+}
+.clr7{
+    background-color: gainsboro;
+}
+.clr8{
+    background-color: #000;
+} 
